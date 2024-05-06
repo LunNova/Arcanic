@@ -1,0 +1,14 @@
+## Interface: 20501
+## Title: Arcanic
+## Notes: Arcanic
+## Author: Luna
+## Version: 1.0
+## X-Curse-Project-ID: 479686
+## DefaultState: enabled
+## SavedVariables: ArcanicDB
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+main.lua

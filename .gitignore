@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+target/
+secrets/
+**/*.rs.bk
+.release/
+.pre-commit-config.yaml
