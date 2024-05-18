@@ -78,7 +78,7 @@ local function BurnTimeRemaining()
 	local touch = SpellRemaining(spells.TOUCH_OF_THE_MAGI, time)
 	local spark = SpellRemaining(spells.RADIANT_SPARK, time)
 	local evocation = SpellRemaining(spells.EVOCATION, time)
-	local surge = max(0, SpellRemaining(spells.ARCANE_SURGE, time) - 10) -- full burn starts before surge CD finishes
+	local surge = max(0, SpellRemaining(spells.ARCANE_SURGE, time) - 14) -- full burn starts before surge CD finishes
 	return max(touch, spark), max(touch, spark, evocation, surge)
 end
 
