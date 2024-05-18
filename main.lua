@@ -1,5 +1,14 @@
 local addonName, addonTable = ...
 
+if select(2, UnitClass("player")) ~= "MAGE" then
+	-- TODO: runtime disable when not arcane spec but allow loading
+	C_AddOns.DisableAddOn(addonName, UnitName("player"))
+	local msg = addonName .. " is only intended for mages and has been disabled for this character"
+	print(msg)
+	UIErrorsFrame:AddMessage(msg, 1, 0.5, 0)
+	return
+end
+
 ---@class ArcaneMageHelper
 ArcaneMageHelper = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceEvent-3.0", "AceConsole-3.0")
 local AceGUI = LibStub("AceGUI-3.0")
